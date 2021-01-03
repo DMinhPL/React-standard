@@ -4,6 +4,6 @@ import Button from './';
 
 storiesOf('atoms/Button', module).add('default', () => {
   return (
-      <Button />
+    <Button>Click me</Button>
   );
 });

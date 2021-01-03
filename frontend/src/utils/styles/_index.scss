@@ -1,0 +1,22 @@
+@import './breakpoint';
+@import './colors';
+@import './fonts';
+@import './functions';
+@import './mixin';
+@import './variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: $white;
+}

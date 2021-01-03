@@ -1,9 +1,11 @@
 import React from 'react';
 
-interface ButtonProps {};
+interface ButtonProps { };
 
-const Button: React.FC<ButtonProps> = ({}) => {
-  return <div className="a-button">Button</div>;
+const Button: React.FC<ButtonProps> = ({ children }) => {
+  return <div className="a-button">
+    <button>{children}</button>
+  </div>;
 };
 
 export default Button;

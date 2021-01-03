@@ -1,0 +1,70 @@
+@mixin fs7 {
+    font-size: rem(7);
+    line-height: rem(9);
+}
+
+@mixin fs8 {
+    font-size: rem(8);
+    line-height: rem(10);
+}
+
+@mixin fs10 {
+    font-size: rem(10);
+    line-height: rem(12);
+}
+
+@mixin fs12 {
+    font-size: rem(12);
+    line-height: rem(16);
+}
+
+@mixin fs14 {
+    font-size: rem(14);
+    line-height: rem(18);
+}
+
+@mixin fs14_m {
+    font-size: rem(14);
+    line-height: rem(20);
+}
+
+@mixin fs14_b {
+    font-size: rem(14);
+    line-height: rem(23);
+}
+
+@mixin fs16 {
+    font-size: rem(16);
+    line-height: rem(21);
+}
+
+@mixin fs20{
+    font-size: rem(20);
+    line-height: rem(27);
+}
+
+/* make area that keep the aspect-ratio of area.
+--------------------------------------------------------- */
+@mixin aspectRatio($width: 1, $height: 1) {
+    position: relative;
+
+    &:before {
+        display: block;
+        padding-bottom: ($height / $width) * 100%;
+        content: '';
+    }
+}
+
+@mixin listStyleNone($width: 1, $height: 1) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin text-overflow($number: 2) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: ($number);
+}

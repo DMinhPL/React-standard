@@ -1,11 +1,13 @@
 import React from 'react';
 
-interface InputProps {}
+interface InputProps {
+    type?: string;
+}
 
-const Input: React.FC<InputProps> = ({}) => {
+const Input: React.FC<InputProps> = ({ type = 'text' }) => {
     return (
         <div className="a-input">
-            <input type="text" />
+            <input type={type} />
         </div>
     );
 };

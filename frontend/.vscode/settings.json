@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 4,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  "editor.codeActionsOnSave":{
+    "source.fixAll": true,
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.singleQuote": true,
+}

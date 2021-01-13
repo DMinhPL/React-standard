@@ -7,6 +7,8 @@ import <%= h.changeCase.pascal(name) %> from './';
 
 storiesOf('<%= level %>/<%= h.changeCase.pascal(name) %>', module).add('default', () => {
   return (
-      <<%= h.changeCase.pascal(name) %> />
+      <<%= h.changeCase.pascal(name) %>>
+        <%= h.changeCase.pascal(name) %>
+      </<%= h.changeCase.pascal(name) %>>
   );
 });
